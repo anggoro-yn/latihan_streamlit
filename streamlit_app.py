@@ -17,7 +17,7 @@ st.markdown("## Perbandingan Kelas Penumpang")
 class_count = df_cleaned['Pclass'].value_counts()
 
 fig, ax = plt.subplots()
-ax.pie(class_count, labels = class_count.index, autopct='%1.1%%', startangle=90)
+ax.pie(class_count, labels = class_count.index, autopct='%1.1f%%', startangle=90)
 ax.axis('equal')
 
 st.pyplot(fig)
