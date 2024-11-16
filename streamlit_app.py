@@ -21,3 +21,12 @@ ax.pie(class_count, labels = class_count.index, autopct='%1.1f%%', startangle=90
 ax.axis('equal')
 
 st.pyplot(fig)
+
+fig, ax = plt.subplots()
+ax.hist(df_cleaned['Age'], bins = 10)
+ax.set_xlabel('Age')
+ax.set_ylabel('Number of passengers')
+ax.set_title('Histrogram Usia Penumpang')
+st.pyplot(fig)
+
+
