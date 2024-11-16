@@ -11,3 +11,13 @@ st.write(df)
 
 df_cleaned = df.dropna(subset=['Age'])
 st.write(df_cleaned)
+
+# Membuat pie chart persentasi kelas penumpang
+st.markdown("## Perbandingan Kelas Penumpang")
+class_count = df_cleaned['Pclass'].value_counts()
+
+fig, ax = plt.subplots()
+ax.pie(class_count, label = class_count.index, autopct='%1.1%%', startangle=90)
+ax.axis('equal')
+
+st.pyplot(fig)
