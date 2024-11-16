@@ -33,3 +33,5 @@ df_male = df_cleaned[df_cleaned['Sex']== 'male']
 fig, ax = plt.subplots()
 ax.hist(df_male['Age'], bins = 10)
 st.pyplot(fig)
+
+st.image('Palestine01.jpg')
