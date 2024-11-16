@@ -8,3 +8,6 @@ st.write("Di malam Minggu belajar membuat webapp streamlit menghabiskan malam Mi
 
 df = pd.read_csv("titanic.csv")
 st.write(df)
+
+df_cleaned = df.dropna(subset=['Age'])
+st.write(df_cleaned)
